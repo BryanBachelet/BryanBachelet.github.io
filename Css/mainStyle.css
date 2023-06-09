@@ -1,0 +1,13 @@
+html
+{
+    scroll-behavior:smooth;
+}
+.navbar
+{  
+    font-size: large;
+    display: flex;
+}
+.navbar.mainTitle
+{
+    font-size: large;
+}
