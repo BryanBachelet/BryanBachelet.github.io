@@ -136,8 +136,7 @@ html
 { 
     align-items: center;
     width: 50%;
-    height: 250px;
-    margin-top: 100px;
+    height: 225px;
     margin-bottom: 50px;
     margin-left:  50px;
     border: 1px solid white;
@@ -146,7 +145,7 @@ html
 
 .presentation .Content
 {
-    height: 80%;
+    height: 50%;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -194,6 +193,7 @@ html
     align-items: center;
     display: flex;
     margin-top: 100px ;
+    height: 400px;
     background-color: grey;
 }
 
@@ -207,34 +207,31 @@ html
 
 .tools .toolsIcon
 {
-    display: flex;
-}
-
-.tools .toolsIcon .language    
-{
-    width: 50%;
-}
-
-.tools img
-{
-    width: 50px;
-    height: 50px;
-}
-
-.tools .langue 
-{
-    font-family: text;
-}
-
-.tools .script 
-{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+    grid-auto-columns: minmax(10px, 300px); 
     align-items: center;
-    display: flex;
-    vertical-align: middle;
-  
+
 }
 
 
+
+.tools .langue
+
+{       padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+     border: 3px solid white;
+    border-radius: 10px;
+    color: white;
+    font-family: text;
+    text-align: center;
+    min-width: 50px;
+    max-width: max-content;
+    font-size: 25px;
+   
+}
 .tools .script .scriptName
 {
     color: white    ;
@@ -249,7 +246,31 @@ html
 }
 .Contact .reseau
 {
-    text-align: center;
-    width: 33%;
+  
+    width: 33%; 
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
     font-family: text;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Contact .reseau  .icon img
+{ 
+    padding-left: 50px;
+}
+.Contact .reseau .emailText
+{
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.Contact .reseau img
+{
+    padding-left: 200px;
+    width: 100px;
+    height:  100px;
 }
