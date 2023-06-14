@@ -100,6 +100,8 @@ html
 {
     
     width: 47%;
+    margin-left:  1.5%;
+    margin-right:  1.5%;
 }
 
 .presentation .intro .section .two img
@@ -115,15 +117,17 @@ html
 .presentation .intro .beta .one 
 { 
     text-align: justify;
-    margin: auto;
-    width: 45%;
+    margin-left:  7.5%;
+    margin-right:  7.5%;
+    width: 35%;
 
 }
 
 .presentation .intro .beta .two
 {   text-align: justify;
-    margin: auto;
-    width: 45%;
+    margin-left:  7.5%;
+    margin-right:  7.5%;
+    width: 35%;
 }
 
 
@@ -134,9 +138,11 @@ html
 
 .presentation .intro .gamma .one 
 {
+ margin-left:  1.5%;
+    margin-right:  1.5%;
     width: 47%;
     text-align: justify;
-    margin: auto;
+    
 }
 
 .presentation .intro .gamma .two
@@ -162,6 +168,26 @@ html
     width: 35%;
 }
 .presentation .intro .delta .one img
+{
+    height: 500px;
+    width: 100%;
+}
+
+
+.presentation .intro .epsilon .one 
+{
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    width: 47%;
+}
+
+.presentation .intro .epsilon .two
+{   
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    width: 47%;
+}
+.presentation .intro .epsilon .one img
 {
     height: 500px;
     width: 100%;
