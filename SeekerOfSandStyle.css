@@ -261,7 +261,7 @@ margin: 0px;
 
     .Details .content
     {
-        height: 750px;
+        height: 850px;
         width: 85%;
     }
 
@@ -274,12 +274,24 @@ margin: 0px;
 
     .Details .content .cards
     {
-        width: 50%;
+        width: 60%;
+        height: 20vw;
         
     }
 
     .Details .content .cards .cardsIcon img
     {
         width: 60%;
+    }
+
+    .TitleSection .content .projectTitle
+    {
+        top: -370px;
+    }
+
+    .presentationProject .content
+    {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
