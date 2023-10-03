@@ -9,9 +9,13 @@
 }
 
 
-html
+
+
+body
 {
     scroll-behavior:smooth;
+    background: #5F264A;
+    margin: 0px ;
 }
 .navbar
 {  
@@ -27,6 +31,7 @@ html
     font-size: 40px;
     font-family: title;
     width: 70%;
+    color:#B0A4A4;
 }
 
 
@@ -60,41 +65,140 @@ html
     margin-left: 25px;
     font-family: text;
     text-decoration: none;
-    color: black;
+    color: #9D76C1;
+}
+
+
+/* Presentation */
+
+.presentation
+{
+    height: 800px;
+
+    width: 100%;
+    display:  flex;
+}   
+.presentation .content
+{
+    width: 800px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font-size: 25px;
+    font-family: text;
+    margin: auto;
+    height: 70%;
+    color: transparent;
+    border-style: dashed;
+    border: 2px solid;
+    transition: all  1s;
+
+    
+}
+
+.presentation  .test
+{
+    width: 800px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font-family: text;
+    margin: auto;
+    height: 20%;
+    color: #c7b1b1;
+    font-size: 25px;
+    transition: all 2s ;
+    border: 2px solid;
+    border-style: dashed;
+}
+
+.presentation .content .name
+{
+    font-size: 40px;
+    font-family: title;
+    text-align: center;
+    color: transparent;
+}
+
+.presentation .test .name
+{
+    font-size: 40px;
+    font-family: title;
+    text-align: center;
+    color: white;
+}
+
+/*Hint part */
+
+.hint
+{
+    align-items: center;
+    text-align: center;
+    font-size: 0px;
+    font-family: text; 
+    color: transparent;
+
+    height:  100px;
+    transition: all  1s;
+}
+
+.hintVisible
+{
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-family: text; 
+    color: #c7b1b1;
+    height:  100px;
+    transition: all  1s;
 }
 
 /* Galeries */
 
 
-
+.WorkContent
+{   padding-top: 180px;
+    min-height: 100vh;
+    width: 100vw;
+    background: #27101f
+}
 .title 
 {
+
+    
     font-size: 40px;
     font-family: title;
     padding-left: 50px;
+    color: #E5CFF7;
 
 }
 .Galerie
 {  
-    width: 100%;
     align-items: center;
-    margin-left: auto;
+    margin-left: 200px;
     margin-top: 50px;
     margin-right: auto  ;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 30px;
+    grid-gap: 100px;
     grid-auto-rows: minmax(100px, auto);
+    align-items: center;
 }
 .Galerie .Project
 {
     display: flex;
     position: relative;
     width: 300px;
-    height: 900px;
+    height: 600px;
     margin-left: auto;
     margin-right: auto  ;
-    background-color: cadetblue;
+    background-color: #957777;
     align-items: center;
     
   
@@ -132,9 +236,24 @@ html
     font-family: text;
 }
 
+.Galerie .Project .tag
+{
+    margin-left: 10px;
+    margin-right: 20px;
+    background-color: #5F264A;
+    position: absolute;
+    color: #c7b1b1;
+    width: 93%;
+    margin-top: 500px;
+    text-align: center;
+    font-size: 15px;
+    font-family: text;
+}
+
+
 .aboutme .presentation
 { 
-    align-items: center;
+
     width: 50%;
     height: 225px;
     margin-bottom: 50px;
@@ -154,9 +273,11 @@ html
 
 .presentation .title
 {
+    font-size: 50px;
     width: 100%;
-    text-align: left;
+    text-align: center;
     margin-bottom: 25px;
+    padding-left: 0px;
     color:  white ;
 }
 
@@ -180,7 +301,7 @@ html
 
 {
     border-radius:25px;
-    background-color: rgb(63, 63, 63);
+    background-color: #27101f;
     margin: auto;
 
     padding-top: 15px;
@@ -192,9 +313,8 @@ html
 {
     align-items: center;
     display: flex;
-    margin-top: 100px ;
     height: 400px;
-    background-color: grey;
+
 }
 
 .tools .title
@@ -240,9 +360,11 @@ html
 }
 
 .Contact
-{   align-items: center;
-    height: 300px;
+{   
+    align-items: center;
+    height: 150px;
     display: flex;
+    background-color: #965e81;
 }
 .Contact .reseau
 {
@@ -268,9 +390,13 @@ html
     
 }
 
+.Contact .reseau .reseauLegend
+{
+    padding-left: 30px;
+}
 .Contact .reseau img
 {
     padding-left: 200px;
-    width: 100px;
-    height:  100px;
+    width: 50px;
+    height:  50px;
 }

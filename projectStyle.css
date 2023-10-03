@@ -13,6 +13,11 @@ html
 {
     scroll-behavior:smooth;
 }
+
+body
+{
+    background-color: #5F264A;
+}
 .navbar
 {  
 
@@ -34,7 +39,7 @@ html
 {   text-decoration: none;
     display: flex;
     align-items:baseline;
-    color: black;
+    color: white;
 }
 
 
@@ -42,7 +47,7 @@ html
 {    font-size: 100px;
 }
 .navbar .MenuBar
-{  color: black;
+{  color: white;
     margin: auto;
     width: 10%;
     height: 100%;
@@ -57,12 +62,189 @@ html
     height: 50px;
 }
 
+
+/* Introduction*/
+.introduction 
+{
+    height: 700px;
+}
+.introduction .content
+{
+    display: flex;
+    margin: auto;
+    margin-left: 200px;
+    align-items: center;
+    height: 600px;
+    width: 80%;
+}
+
+.introduction .content .informations
+{
+    display: flex;
+    width: 40%;
+    height: 100%;
+    align-items: center;
+    
+}
+
+.introduction .content .informations .infoContainer 
+{   
+    margin: auto;
+
+    width: 80%;
+    height: 0%;
+    background-color: #42032b;;
+    border-radius: 25px;
+    color: transparent;
+    font-family: text;
+    transition: all 1s;
+}
+
+.introduction .content .informations .infoAppear
+{
+    color: white;
+    transition: all 1s;
+    width: 80%;
+    height: 80%;
+}
+
+
+
+.titleDetail
+{ 
+    margin: auto;
+    color: white;
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
+    width: fit-content;
+    font-family: title;
+}
+
+.introduction .content .informations .infoContainer .titleDetail
+{
+   
+    margin-top: 20px;
+
+}
+.introduction .content .informations .infoContainer li
+{
+    margin-top: 30px;
+}
+
+
+
+.introduction .content .trailer
+{
+    display: flex;
+    align-items: center;
+    width: 0%;
+    height: 100%;
+    transition: all 1s;
+   
+}
+
+.introduction .content .trailerVid
+{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    transition: all 1s;
+}
+
+
+.introduction .content .trailer video
+{  
+
+    width: 100%;
+
+}
+
+.projectInfo  
+{
+  
+}
+
+.projectInfo .content
+{
+    width: 80%;
+    background-color: #42032b;
+    border-radius: 15px;
+}
+.projectInfo .content .aboutProjectContainer
+{
+    
+    display: flex;
+    margin: auto ;
+    font-family: text;
+    color: white;
+    text-align: center;
+    height: 130px;
+
+
+}
+
+.projectInfo .content  .aboutProjectContainer .aboutProject
+{
+    margin: auto ;
+    width: 90%;
+    text-align: justify;
+}
+
+
+.projectInfo .content .engineScreen 
+{
+    display: flex;
+    padding-bottom: 25px;
+}
+
+.projectInfo .content .engineScreen img
+{
+    margin: auto;
+}
+
+
+.projectInfo  .content .titleContainer 
+{
+    display: flex;
+   
+}
+
+.projectInfo  .content .titleContainer .titleDetail
+{
+    margin-top: 25px;
+}
+
+.projectInfo .content .personalWorkContainer
+{
+    display: flex;
+    margin: auto ;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 90%;
+}
+
+.projectInfo .content  .personalWorkContainer .personalWork
+{
+    margin: auto;
+}
+
+.text
+{
+    color: white;
+    font-family: text;
+}
+
+
+
+
 /*Presentation*/
 
 .presentation 
 {
 
-}
+}   
 
 .presentation .title 
 {
@@ -191,5 +373,13 @@ html
 {
     height: 500px;
     width: 100%;
+}
+
+.title
+{
+    font-size: 40px;
+    font-family: title;
+    padding-left: 50px;
+    color: #E5CFF7;
 }
 
