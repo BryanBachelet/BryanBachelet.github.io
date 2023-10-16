@@ -267,12 +267,25 @@ body
     text-decoration: none   ;
 }
 
+
 .Footer
 {   
     align-items: center;
-    height: 150px;
-    display: flex;
+    height: 180px;
+
     background-color:  rgb(95, 95, 95);
+}
+
+
+.Footer .Text
+{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: text;
+    font-size: 20px;
+    color: white;
+    text-align:  center;
 }
 
 .Footer .FooterContainer

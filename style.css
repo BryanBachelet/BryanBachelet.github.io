@@ -15,7 +15,7 @@ body
 {
     scroll-behavior:smooth;
     background: #5F264A;
-    margin: 0px ;
+    margin: 0;
 }
 .navbar
 {  
@@ -139,8 +139,7 @@ body
 
 .WorkContent
 {   padding-top: 100px;
-    min-height: 90vh;
-    width: 100vw;
+    height: 900px;
     background: #27101f;
 }
 .title 
@@ -353,9 +352,21 @@ body
 .Footer
 {   
     align-items: center;
-    height: 150px;
-    display: flex;
-    background-color: #965e81;
+    height: 180px;
+
+    background-color:  rgb(95, 95, 95);
+}
+
+
+.Footer .Text
+{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: text;
+    font-size: 20px;
+    color: white;
+    text-align:  center;
 }
 
 .Footer .FooterContainer
@@ -381,4 +392,63 @@ body
 {
     width: 50px;
     height:  50px;
+}
+
+
+@media (max-width: 1000px) 
+{   
+
+    .presentation
+{
+
+    width: 100%;
+    height: 600px;
+    display:  flex;
+}   
+
+    .WorkContent
+{   padding-top: 100px;
+    height:700px;
+    background: #27101f;
+}
+
+    .Galerie .GalerieContainer
+{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 70px;
+    grid-auto-rows: minmax(100px, auto);
+    align-items: center;
+}
+
+    .Galerie .GalerieContainer .Project
+    {
+        display: flex;
+        position: relative;
+        width: 200px;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto  ;
+        background-color: #957777;
+        align-items: center;
+        
+      
+    }
+
+
+    .Galerie .Project .tag
+{
+    margin-left: 10px;
+    margin-right: 20px;
+    background-color: #5F264A;
+    position: absolute;
+    color: #c7b1b1;
+    width: 93%;
+    margin-top: 300px;
+    text-align: center;
+    font-size: 15px;
+    font-family: text;
+}
+
 }
