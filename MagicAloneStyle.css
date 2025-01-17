@@ -208,8 +208,8 @@ body
 
 .presentationProject .content .overviewContainer .imageContent img
 { 
-    width: 100%;
-    height: 100%;
+    width: 1000px;
+    height: 1000px;
 }
 
 .presentationProject .content .overviewContainer .imageContent
