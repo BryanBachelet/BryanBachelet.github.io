@@ -1,4 +1,5 @@
 @import "projectStyle.css";
+@import "styles.css";
 
 html
 {
@@ -7,34 +8,24 @@ html
 
 body
 {
-    background-color: rgb(85, 26, 26);
+    background: linear-gradient(90deg, rgb(199, 100, 166) 0%, rgb(62, 103, 149) 100%);
     width: 100%;
     margin: 0px;
 }
 
-
-
-.HomeIcon
-{
-    display: flex;
-    align-items: center;
-   position: sticky;
-     top: 830px;
-     left: 1810px;
-    width : 80px;
-    height: 80px;
-    background-color: white;
-    border-radius: 100px;
+.star-layers {
+    height: 304vh;
 }
-.HomeIcon .HomeLink
+
+.navbar a
 {
-    margin: auto;
+    all : inherit
 }
 
 
 .TitleSection
 {
-    height: 1000px;
+    height: 800px;
     width: 100%;
 }
 
@@ -42,18 +33,21 @@ body
 {
     width: 90%;
     height: 90%;
+   
 }
 .TitleSection .content
 {
+   
+
     width: 100%;
     height: 100%;
     align-items: center;
     vertical-align: middle;
-    max-width: 2000px;
+    max-width: 1800px;
 }
 
 .TitleSection .content .projectImage
-{
+{ 
     display: flex;
     align-items: center;
     padding-top: 100px;
@@ -63,8 +57,10 @@ body
 
 .TitleSection .content  .projectImage img
 {   
+   
+    z-index: 100;
     height: 100%;
-    filter: brightness(40%) grayscale(500%) ;
+    /* filter: brightness(40%) grayscale(500%) ;  */
     margin: auto;
 
 }
@@ -84,15 +80,21 @@ body
 
 .Details
 {
-   background-color: rgb(20, 20, 20);
+    margin: auto;
     width: 100%;
+    display: flex;
+   
 }
 
 .Details .content
 {
+    background-color: rgb(20, 20, 20);
+    z-index: 101;
     height: 550px;
     width: 90%;
     padding-top: 100px;
+    border-radius: 15px;
+    margin: auto;
  
    
 }
@@ -115,6 +117,8 @@ body
 {
     display: flex;
     padding-top: 60px; 
+    margin: auto;
+    width: 90%;
 }
 .Details .content .cards
 {
@@ -149,7 +153,8 @@ body
     align-items: center;
     margin: auto;
     padding-bottom: 50px;
-    width: 40%;
+    width: 50%;
+    height: 50%;
 
 }
 
@@ -161,41 +166,58 @@ body
 
 .Details .content .cards .cardsText
 {
-    
+    height: 50%;
     text-align: center ;
-    font-size: 22px;
+    font-size: 20px;
     margin: auto;
+    
 }
+
 
 .presentationProject
 {
+    width: 100%;
     height: 800px;
+    margin-top: 100px;
+    display: flex;
+
 }
 
-.presentationProject .content
+.presentationProject .contents
 {
-    padding-top: 100px;
+    width: 90%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    padding-top:100px;
+    background-color: #953e56;
+    border-radius: 15px ;
+    margin: auto;
+    z-index: 110;
+
 }
-.presentationProject .content .titleContainer
+.presentationProject .contents .titleContainer
 {
     display: flex;
     align-items: center;
 }
-.presentationProject .content .titleContainer .title
+.presentationProject .contents .titleContainer .title
 {
     width: fit-content;
     text-decoration: underline;
 }
 
-.presentationProject .content .overviewContainer
+.presentationProject .contents .overviewContainer
 {
     display: flex;
-    width: 100%;
+    width: 90%;
+    margin: auto;
     padding-top: 50px;
     align-items: center;
 }
 
-.presentationProject .content .overviewContainer .overviewText
+.presentationProject .contents .overviewContainer .overviewText
 {
     width: 50%;
     font-family: text;
@@ -206,16 +228,20 @@ body
     color: white;
 }
 
-.presentationProject .content .overviewContainer .imageContent img
-{ 
-    width: 1000px;
-    height: 1000px;
-}
-
-.presentationProject .content .overviewContainer .imageContent
+.presentationProject .contents .overviewContainer .imageContent
 {
     width: 50%;
+    height: 500px;
 }
+.presentationProject .contents .overviewContainer .imageContent video
+{ 
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
 
 .linkSection
 {
@@ -228,18 +254,18 @@ body
     padding-top: 50px;
 }
 
-.linkSection .content .LinkButtonContainer
+ .LinkButtonContainer
 {
     padding-top: 50px;
     display: flex;
-    width: 50%;
+    width: 80%;
     height: 30%;
     align-items: center;
     text-align: center;
     margin: auto;
 }
 
-.linkSection .content .LinkButtonContainer .LinkButton
+ .LinkButtonContainer .LinkButton
 {
     border: 3px white solid;
     width: 30%;
@@ -248,9 +274,18 @@ body
     margin: auto;
     vertical-align: middle;
     display: flex;
+    transition: all 1s;
+}
+.LinkButtonContainer .LinkButton:hover
+{
+    border: 3px white solid;
+    background-color: white;
+    transition: all 1s;
 }
 
-.linkSection .content .LinkButtonContainer .LinkButton .LinkText
+
+
+.LinkButtonContainer .LinkButton .LinkText
 {
     font-size: 25px;
     color: white;
@@ -259,58 +294,28 @@ body
     
 }
 
-.linkSection .content .LinkButtonContainer .LinkButton .LinkText a
+ .LinkButtonContainer .LinkButton .LinkText a
 {    
     font-size: 25px;
     color: white;
     font-family: text;
     text-decoration: none   ;
+    transition: all 1s;
 }
 
+
+.LinkButtonContainer .LinkButton:hover .LinkText a
+{    
+    font-size: 25px;
+    color: #953e56;
+    font-family: text;
+    text-decoration: none   ;
+    transition: all 1s;
+}
 
 .Footer
-{   
-    align-items: center;
-    height: 180px;
-
-    background-color:  rgb(95, 95, 95);
-}
-
-
-.Footer .Text
-{
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-family: text;
-    font-size: 20px;
-    color: white;
-    text-align:  center;
-}
-
-.Footer .FooterContainer
-{
-    display: flex;
-    margin: auto;
-    width: 20%;
-    height: 100px;
-}
-.Footer .reseau
-{
-  
-    display: flex;
-    align-items: center;
-    vertical-align: middle;
-    font-family: text;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.Footer .reseau img
-{
-    width: 50px;
-    height:  50px;
+{   padding-top: 130px;
+    height: 270px;
 }
 
 @media (max-width: 1000px) 
