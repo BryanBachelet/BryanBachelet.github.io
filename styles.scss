@@ -207,7 +207,7 @@ $shadows-big: multiple-box-shadow(100); // Big stars
 
   // Styling for the star layers container
 .star-layers {
-  height: 333vh;
+  height: 320vh;
  // background: radial-gradient(ellipse at bottom, #85cb33 0%, #100b00 100%);
   overflow: hidden;
   position: relative;
@@ -284,8 +284,8 @@ $shadows-big: multiple-box-shadow(100); // Big stars
     z-index: 100;
     align-items: center;
     justify-content: center;
-    padding-top: 70px;
-    height: 850px;
+    padding-top: 30px;
+    height: 750px;
     width: 80%;
   
     border-radius: 15px;
@@ -412,7 +412,7 @@ $shadows-big: multiple-box-shadow(100); // Big stars
 {
     justify-content: center;
     margin: auto;
-    background-color: #3f6ba9;
+    background-color: #93567b;
     position: absolute;
     color: #f9f871;
     width: 93%;
