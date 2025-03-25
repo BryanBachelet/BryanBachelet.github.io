@@ -684,6 +684,31 @@ $shadows-big: multiple-box-shadow(100); // Big stars
     font-size: 40px;
 }
 
+// About me sections
+
+
+.aboutme
+{
+    height: 900px;
+}
+
+.aboutme .aboutmeBackground
+{
+    width: 90%  ;
+    height: 80%;
+}
+
+.aboutme .textPresentation
+{
+    font-size:  25px;
+}
+
+.aboutme .AboutButton
+{
+    margin-top: 30px;
+    width: 30%;
+    font-size: 30px;
+}
     .presentation
 {
 
