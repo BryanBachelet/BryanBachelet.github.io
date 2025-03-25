@@ -621,9 +621,9 @@ $shadows-big: multiple-box-shadow(100); // Big stars
 }
 .Footer .Text
 {
-    // padding-left: 20px;
-    // padding-top: 20px;
-    // padding-bottom: 20px;
+    /* padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px; */
     font-family: text;
     font-size: 20px;
     font-weight: 600;
@@ -668,6 +668,21 @@ $shadows-big: multiple-box-shadow(100); // Big stars
 
 @media (max-width: 1000px) 
 {   
+    .Footer .FooterBlock
+{
+    width: 80% ;
+    
+}
+
+.Footer .Title
+{
+    font-size: 60px;
+}
+
+.Footer .Text
+{
+    font-size: 40px;
+}
 
     .presentation
 {
@@ -693,19 +708,19 @@ $shadows-big: multiple-box-shadow(100); // Big stars
     align-items: center;
 }
 
-    .Galerie .GalerieContainer .Project
-    {
-        display: flex;
-        position: relative;
-        width: 200px;
-        height: 400px;
-        margin-left: auto;
-        margin-right: auto  ;
-        background-color: #957777;
-        align-items: center;
-        
-      
-    }
+.Galerie .GalerieContainer .Project
+{
+    display: flex;
+    position: relative;
+    width: 200px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto  ;
+    background-color: #957777;
+    align-items: center;
+    
+    
+}
 
 
     .Galerie .Project .tag
@@ -721,5 +736,8 @@ $shadows-big: multiple-box-shadow(100); // Big stars
     font-size: 15px;
     font-family: text;
 }
+
+
+
 
 }
