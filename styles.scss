@@ -684,9 +684,32 @@ $shadows-big: multiple-box-shadow(100); // Big stars
     font-size: 40px;
 }
 
+// Nav bar
+.navbar .ButtonContainer
+{
+    width: 600px;
+    height: 70px;
+}
+
+.navbar .ButtonContainer .Button
+{
+    font-size: 27px;
+}
+
+// Project sections 
+
+.WorkContent
+{
+    width: 90%;
+}
+.Galerie .GalerieContainer .Project:hover
+{
+    transition:  all 1.0s;
+    width: 250px;
+    outline-color: #f9f871;
+}
+
 // About me sections
-
-
 .aboutme
 {
     height: 900px;
