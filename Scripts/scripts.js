@@ -53,8 +53,30 @@ for( let project of galerieTest)
 
       for(let element of elements)
       { 
-        if(this != element) element.style.width = "150px";
-        else element.style.width = "1000px"
+        if(this != element) 
+          {
+            if( window.screen.width  <= 1000)
+              {
+                element.style.width = "200px";
+              }
+              else
+              {
+                element.style.width = "150px";
+                
+              }
+          }
+        else 
+        { 
+          if( window.screen.width  <= 1000)
+          {
+            element.style.width = "200px"
+
+          }else
+          {
+            element.style.width = "1000px"
+
+          }
+        }
       }
   });
 
@@ -68,7 +90,7 @@ for( let project of galerieTest)
 
     for(let element of elements)
     { 
-        element.style.width = "250px";
+        element.style.width = "200px";
     }
   });
 }
