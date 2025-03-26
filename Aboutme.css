@@ -14,7 +14,7 @@ body
 }
 
 .star-layers {
-    height: 300vh;
+ 
 }
 
 
@@ -355,3 +355,58 @@ body
     /* list-style-type:disc; */
 
   /* } */
+
+  @media (max-width: 1000px) 
+  {
+
+    .star-layers {
+        height:  110vh;
+    }
+
+    .Presentation
+    {
+        height: 800px;
+    }
+    .Presentation .Content .presentationBlock .presentationContainer
+    {
+        height: 500px;
+    }
+    .Presentation .Content .presentationBlock  .pictureContainer .picture img
+    {
+        width: 250px;
+        height: 350px;
+    }
+
+    .Presentation .Content .presentationBlock .Text .bigText
+    {
+        font-size: 45px; 
+    }   
+    .Timeline .datePoint
+    {
+        font-size: 19px;
+        padding: 0px 50px; 
+        width:80%;
+    }
+
+    .Skills .content
+    {
+        width: 100%;    
+    }
+
+    .Skills .content .BoxContent .Title
+    { 
+        font-size: 30px;
+    }
+
+    .Skills .content .boxContainer
+    {
+     
+        width: 95%;
+    }
+
+    .Skills .content .BoxContent .TextList
+    {
+        margin-left:20px;
+        margin-top: 30px;
+    }
+  }
