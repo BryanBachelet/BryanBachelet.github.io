@@ -396,4 +396,8 @@ body
         width: 100%;
         height: 500px;
     }
+    .star-layers
+    {
+        height: 150vh;
+    }
 }
