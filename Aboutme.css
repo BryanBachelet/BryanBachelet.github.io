@@ -383,7 +383,7 @@ body
     }   
     .Timeline
     {
-        height: 200px;
+        height: 10px;
         visibility: hidden;
     }
     .Timeline .datePoint
