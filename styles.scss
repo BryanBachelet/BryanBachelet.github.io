@@ -316,7 +316,7 @@ $shadows-big: multiple-box-shadow(100); // Big stars
     display: grid;
     padding-top: 50px;
     width: 90%;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
 
     grid-gap: 100px;
     grid-auto-rows: minmax(250px, 500px);
@@ -328,7 +328,7 @@ $shadows-big: multiple-box-shadow(100); // Big stars
 {
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(10px, 500px);
     align-items: center;
@@ -358,7 +358,7 @@ $shadows-big: multiple-box-shadow(100); // Big stars
 .Galerie .GalerieContainer .Project:hover
 {   
     transition: all 1.0s;
-    width: 1000px;
+    width: 150px;
     outline-color: #f9f871;
 
 }
@@ -684,7 +684,7 @@ $shadows-big: multiple-box-shadow(100); // Big stars
     font-size: 40px;
 }
 
-// Nav bar
+/* // Nav bar */
 .navbar .ButtonContainer
 {
     width: 600px;
@@ -696,7 +696,7 @@ $shadows-big: multiple-box-shadow(100); // Big stars
     font-size: 27px;
 }
 
-// Project sections 
+/* // Project sections  */
 
 .WorkContent
 {
@@ -705,13 +705,13 @@ $shadows-big: multiple-box-shadow(100); // Big stars
 
 
 
-// Star Layer  
+/* // Star Layer   */
 .star-layers
 {
     height: 200vh;
 }
 
-// About me sections
+/* // About me sections */
 .aboutme
 {
     height: 900px;
@@ -802,7 +802,6 @@ $shadows-big: multiple-box-shadow(100); // Big stars
     height: 100%;
     transition: all 1.0s;
     filter: none;
-    
 }
 
 .Galerie .Test
