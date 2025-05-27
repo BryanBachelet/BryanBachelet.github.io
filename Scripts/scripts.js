@@ -73,7 +73,7 @@ for( let project of galerieTest)
 
           }else
           {
-            element.style.width = "1000px"
+            element.style.width = "900px"
 
           }
         }
