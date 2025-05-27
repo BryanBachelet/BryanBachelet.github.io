@@ -340,6 +340,11 @@ body
         width: 85%;
     }
 
+    .Details .content .titleContainer
+    {
+        padding-left:0px;
+    }
+
     .Details .content .cardsContainer
     {
         display: grid;
@@ -349,7 +354,7 @@ body
 
     .Details .content .cards
     {
-        width: 60%;
+        width: 70%;
         height: 20vw;
         
     }
@@ -368,5 +373,31 @@ body
     {
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+
+    .presentationProject
+    {
+        height: 1200px;
+    }
+
+    .presentationProject .contents .overviewContainer
+    {
+        display: block;
+    }
+    .presentationProject .contents .overviewContainer .overviewText
+    {
+        width: 100%;
+    }
+
+    .presentationProject .contents .overviewContainer .imageContent
+    {
+
+        margin-top: 30px;
+        width: 100%;
+        height: 500px;
+    }
+    .star-layers
+    {
+        height: 3500px;
     }
 }
