@@ -58,22 +58,32 @@ for( let project of galerieTest)
             if( window.screen.width  <= 1000)
               {
                 element.style.width = "200px";
+              
+                
               }
               else
               {
                 element.style.width = "150px";
-                
+                let testTag = element.getElementsByClassName("tag");
+                testTag[0].style.visibility = "hidden";
+                testTag[0].style.opacity = " 0";
+              
               }
           }
         else 
         { 
           if( window.screen.width  <= 1000)
           {
-            element.style.width = "200px"
+            element.style.width = "275px"
 
           }else
           {
             element.style.width = "900px"
+             let testTag = element.getElementsByClassName("tag");
+                testTag[0].style.visibility = "visible";
+                 
+                testTag[0].style.opacity = " 1";
+                testTag[0].style.transition= " opacity 0.5s linear";
 
           }
         }
@@ -90,7 +100,12 @@ for( let project of galerieTest)
 
     for(let element of elements)
     { 
-        element.style.width = "200px";
+        element.style.width = "275px";
+          let testTag = element.getElementsByClassName("tag");
+                testTag[0].style.visibility = "visible";
+                 
+                testTag[0].style.opacity = " 1";
+                testTag[0].style.transition= " all 0.5s linear";
     }
   });
 }
