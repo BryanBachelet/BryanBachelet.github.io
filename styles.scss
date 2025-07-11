@@ -23,7 +23,7 @@ $text-title-color :#edf045  ;
 
 body
 { 
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
     background: linear-gradient(90deg, rgba(95,38,74,1) 0%, rgba(149,62,86,1) 100%);
     margin: 0;
 }
@@ -305,7 +305,7 @@ $shadows-big: multiple-box-shadow(100); // Big stars
     justify-content: center;
     padding-top: 30px;
     height: 750px;
-    width: 80%;
+    width: 90%;
   
     border-radius: 15px;
     padding-bottom: 30px;
@@ -520,7 +520,7 @@ $shadows-big: multiple-box-shadow(100); // Big stars
   
 }
 
-.aboutme .AboutButton a
+.aboutme  a
 { 
     all : unset;
     color:  white ;
@@ -813,9 +813,9 @@ $shadows-big: multiple-box-shadow(100); // Big stars
 {
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 70px;
-    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+    grid-auto-rows: minmax(50px, auto);
     align-items: center;
 }
 
@@ -823,7 +823,7 @@ $shadows-big: multiple-box-shadow(100); // Big stars
 {
     display: flex;
     position: relative;
-    width: 200px;
+    width: 150px;
     height: 400px;
     margin-left: auto;
     margin-right: auto  ;
