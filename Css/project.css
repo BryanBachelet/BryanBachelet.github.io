@@ -181,6 +181,9 @@ margin: 0px;
 {
     margin: auto;
     width: 80% ;
+    background-color: white;
+    border: solid 2px white;
+    border-radius: 30px;
 }
 
 .Details .content .cards .cardsText
