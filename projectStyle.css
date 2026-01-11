@@ -110,13 +110,16 @@ body
     margin: auto;
     font-family: text;
     font-size: 23px;
+    line-height: 30px;
     text-align: left;
     width: 80%;
     padding: 10px;
     margin-top: 35px;
     color: aliceblue;
     border: solid 1px white;
-      border-radius: 15px;
+    border-radius: 15px;
+    height: max-content;
+    margin-bottom: 25px;
 }
 
 
@@ -276,7 +279,7 @@ body
     font-family: text;
     text-align: justify;
     line-height: 30px;
-    font-size: 16px;
+    font-size: 25px;
     padding-right: 40px;
     color: white;
 }
@@ -394,7 +397,7 @@ body
 
     .TitleSection .content
     {
-          display: block;
+        display: block;
     }
     
     .TitleSection .content  .projectImage img
@@ -407,7 +410,7 @@ body
     {
         z-index:101 ;
         width: 100%;
-        height: 300px;
+        height: fit-content;
     }
 
 
