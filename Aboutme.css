@@ -118,7 +118,7 @@ body
 .Presentation .Content .presentationBlock .Text .smallText
 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 25px;
     color: #ffffde;
 
@@ -245,6 +245,7 @@ body
   border-radius: 6px;
   color: white;
   font-family: text;
+  font-size: 20px;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -376,6 +377,12 @@ body
 }
 
 
+.Skills .content .BoxContent .TextList ul
+{
+    padding-left: 10px;
+}
+
+
 .Skills .content .BoxContent .TextList li
 {
     /* margin: auto; */
@@ -394,8 +401,8 @@ body
 {
     display: inline-block;
     content: "";
-    width: 1.3rem;
-    height: 1.3rem;
+    width: 1rem;
+    height: 1rem;
     vertical-align: middle;
     border-radius: 50%;
     /* border: solid;
@@ -425,7 +432,7 @@ body
   {
 
     .star-layers {
-        height:  170vh;
+        height:  fit-content;
     }
 
     .Presentation
@@ -485,6 +492,11 @@ body
     {
         margin-left:20px;
         margin-top: 30px;
+    }
+
+    .Skills .container .BoxContent .TextList ul
+    {
+        padding-left: 20px;
     }
 
   
