@@ -21,11 +21,30 @@ $text-title-color :#edf045  ;
 
 
 
-body
-{ 
-    scroll-behavior: smooth;
+.html
+{
+    overflow: hidden;
+    height: 100%;
+    position: fixed;
+}
+
+body 
+{   
+    overflow: auto;
+    height: 100%;
+    position: relative;
+    
+    overscroll-behavior: none;
     background: linear-gradient(90deg, rgba(95,38,74,1) 0%, rgba(149,62,86,1) 100%);
     margin: 0;
+}
+
+body .scrollContainer
+{   
+
+    overscroll-behavior: contain;
+    overflow-y: scroll;
+    scroll-behavior: auto;
 }
 
 .navbar
@@ -748,13 +767,17 @@ $shadows-big: multiple-box-shadow(100); // Big stars
 /* // Nav bar */
 .navbar .ButtonContainer
 {
-    width: 600px;
+    width: 650px;
     height: 70px;
 }
 
 .navbar .ButtonContainer .Button
 {
-    font-size: 27px;
+    text-align: center;
+    vertical-align:middle;
+    width: 120px;
+    height: 30px;
+    font-size: 24px;
 }
 
 /* // Project sections  */
