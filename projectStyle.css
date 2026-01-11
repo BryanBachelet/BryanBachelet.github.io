@@ -332,6 +332,7 @@ body
     vertical-align: middle;
     display: flex;
     transition: all 1s;
+    margin-bottom: 20px;
 }
 .LinkButtonContainer .LinkButton:hover
 {
