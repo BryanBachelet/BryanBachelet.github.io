@@ -15,7 +15,7 @@ body
 }
 
 .star-layers {
-    height: 325vh;
+    height: fit-content;
 }
 
 .navbar a
@@ -229,7 +229,7 @@ body
 .presentationProject
 {
     width: 100%;
-    height: 800px;
+    height: fit-content;
     margin-top: 100px;
     display: flex;
     
@@ -280,7 +280,8 @@ body
     text-align: justify;
     line-height: 30px;
     font-size: 25px;
-    padding-right: 40px;
+    padding-right: 30px;
+
     color: white;
 }
 
@@ -469,16 +470,21 @@ body
 
     .presentationProject
     {
-        height: 1200px;
+        height: fit-content;
     }
 
     .presentationProject .contents .overviewContainer
     {
         display: block;
+        margin-left: 40px;
+        margin-right: 15px;
     }
     .presentationProject .contents .overviewContainer .overviewText
     {
         width: 100%;
+
+        padding-right: 0px;
+       
     }
 
     .presentationProject .contents .overviewContainer .imageContent
@@ -487,9 +493,11 @@ body
         margin-top: 30px;
         width: 100%;
         height: 500px;
+
+        margin-bottom: 40px;
     }
     .star-layers
     {
-        height: 3600px;
+        height: fit-content;
     }
 }
