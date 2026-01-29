@@ -352,7 +352,7 @@ $shadows-big: multiple-box-shadow(100); // Big stars
     display: grid;
     padding-top: 50px;
     width: 90%;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
 
     grid-gap: 100px;
     grid-auto-rows: minmax(250px, 500px);
@@ -364,7 +364,7 @@ $shadows-big: multiple-box-shadow(100); // Big stars
 {
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(10px, 500px);
     align-items: center;
@@ -835,7 +835,7 @@ $shadows-big: multiple-box-shadow(100); // Big stars
 {
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 25px;
     grid-auto-rows: minmax(50px, auto);
     align-items: center;

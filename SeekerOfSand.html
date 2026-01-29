@@ -54,6 +54,9 @@
                 
                     <div class="cards">
                         <div class="cardContent">
+                             <div class="titleCard">
+                               Genre :
+                            </div>
                             <div class="cardsIcon">
                                 <img src="Images/Icon_RogueLike.png">
                             </div>
@@ -65,6 +68,9 @@
 
                     <div class="cards">
                         <div class="cardContent">
+                             <div class="titleCard">
+                               Duration :
+                            </div>
                             <div class="cardsIcon">
                                 <img src="Images/Icon_Calendar.png">
                             </div>
@@ -76,6 +82,9 @@
 
                     <div class="cards">
                         <div class="cardContent">
+                            <div class="titleCard">
+                               Team Size :
+                            </div>
                             <div class="cardsIcon">
                                 <img src="Images/Icon_Peoples.png">
                             </div>
@@ -87,6 +96,9 @@
 
                     <div class="cards">
                         <div class="cardContent">
+                            <div class="titleCard">
+                               Engine :
+                            </div>
                             <div class="cardsIcon">
                                 <img src="Images/CSharpIcon.png">
                             </div>
@@ -98,6 +110,9 @@
 
                     <div class="cards">
                         <div class="cardContent">
+                            <div class="titleCard">
+                               Role :
+                            </div>
                             <div class="cardsIcon">
                                 <img src="Images/Icon_Travail.png">
                             </div>
@@ -118,8 +133,6 @@
                     <div class="overviewText">
                         <div class="descirption">
                             Seekers of Sand is a Rogue-Like game developed on PC.  You embody a Seeker, a master of alchemy that uses its knowledge to erase the dissonance from the desert. Your goal is to progress in various areas and overcome challenges to reach the Twilight Queen, responsible for the spread of the dissonance in the desert.
-                            <p>On this project, I'm the main programmer that is responsible for all technical aspects of the game and all the code architecture. I work mostly on gameplay features like the character for example but I also work tools to help the production of the team. 
-                            An example of that is the development of the behavior tree tools, a feature that is not available in Unity.
                         </div> 
                         <div class="LinkButtonContainer">
                             <div class="LinkButton">
@@ -129,15 +142,30 @@
                                 <div class="LinkText"><a href="https://github.com/BryanBachelet/K-Train">  Github </a> </div>
                             </div>
                         </div>
-                    </div>
-                    
+                    </div>            
                     <div class="imageContent">
                         <!-- <img src="Images/Seeker of Sand ScreenShot 2.png"> -->
                         <!-- <video controls>   -->
                             <iframe width="1000" height="1000" src="https://www.youtube.com/embed/iVlW40yR9GE?si=4xmqxPjK0xOfTEuW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <!-- </video> -->
-                    </div> 
-                    
+                    </div>
+                </div>
+                 <div class="detailsProjectContainer">   
+                        <div class="descirption">
+                            <p>For Seeker of Sand, I was the main programmer on it. I worked on numerous systems for the game to work. One thing I want highlight is the spell system. So to start, we wanted to create a system with a lot of spells and the capacity to create variations of spells easily. The first step is to divide the spell into large categories:
+                        </p>
+                        </div> 
+                        <div class="illustration">
+                            <img src="Images/Seeker_Of_Sand/Seeker_of_Sand_Schema 1.png">
+                        </div>
+                         <div class="descirption">
+                            <p>So first, I implemented a way to launch each type of spell with its rules, but we still needed a way to create and modify each spell easily. To answer that problem, we analyze our spell, and the main conclusion is that spells are mainly statistical, and there is some variation in the behavioral type.
+                            <p>To regroup all those statistics and some behavior, we took advantage of the scriptable object system of Unity to regroup all the stats in it. In order to facilitate working with those stats, we create our own statistics class that contains a float-based value, a float percent value to give another way to increase stats, and an enum to identify the type of stats. With this, it was easier to create a modular spell, and we also set up a basic layout for the different types of spells to avoid repetitive action.
+                        </p>
+                        </div> 
+                        <div class="illustration">
+                            <img src="Images/Seeker_Of_Sand/Seeker_of_Sand_Schema 2.png">
+                        </div>
                 </div>
             </div>  
         </section>
