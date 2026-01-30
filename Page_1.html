@@ -55,13 +55,9 @@
 
                 
                     <div class="cards">
-                       
-                        <div class="text cardContent">
-                            <div class="titleCard">
-                               Genre :
-                            </div>
+                        <div class="cardContent">
                             <div class="cardsIcon">
-                                <img src="Images/Icons/Icon_Volant.png">
+                                <img src="Images/Icon_Racing.png">
                             </div>
                             <div class="text cardsText">
                                Racing Game 
@@ -71,9 +67,6 @@
 
                     <div class="cards">
                         <div class="cardContent">
-                            <div class="titleCard">
-                               Duration :
-                            </div>
                             <div class="cardsIcon">
                                 <img src="Images/Icon_Calendar.png">
                             </div>
@@ -85,9 +78,6 @@
 
                     <div class="cards">
                         <div class="cardContent">
-                            <div class="titleCard">
-                               Team Size :
-                            </div>
                             <div class="cardsIcon">
                                 <img src="Images/Icon_Peoples.png">
                             </div>
@@ -99,9 +89,6 @@
 
                     <div class="cards">
                         <div class="cardContent">
-                            <div class="titleCard">
-                               Engine :
-                            </div>
                             <div class="cardsIcon">
                                 <img src="Images/Icon_C++.png">
                             </div>
@@ -113,9 +100,6 @@
 
                     <div class="cards">
                         <div class="cardContent">
-                            <div class="titleCard">
-                               Role :
-                            </div>
                             <div class="cardsIcon">
                                 <img src="Images/Icon_Travail.png">
                             </div>
@@ -136,19 +120,17 @@
                     <div class="overviewText">
                         <div class="descirption">
                            Roller Loop is a racing game developed on PS5 and PC. We worked on the project for 8 months with a team of 20 people. We play Ayla, a young Jamaican hacker who moves into virtual systems with her roller. With Ayla, we can jump, grind drift, and crouch but she has a special ability: The rollback. The rollback allows the player to place a point in space and come back to it and keep her speed and her direction to reach new places. 
-                            <div class="LinkButtonContainer">
-                                <div class="LinkButton">
-                                    <div class="LinkText"> <a href="https://isart-digital.itch.io/rollerloop">  Itch.io </a></div> 
-                                </div>
-                                <div class="LinkButton">
-                                    <div class="LinkText"><a href="https://github.com/BryanBachelet/RollerLoopCode">  Github </a> </div>
-                                </div>
-                            </div>
+                            <p>On this project, I worked on the USP mechanics and the rollback. I develop these mechanics in close collaboration with game designers. I have also implemented all the sound logic in the game in collaboration with sound and music designers. For example, I work on performance scores depending on the player's actions to manage the multiple layers of the music. The more the player is performing well, the more music layer they will hear.
                         </div> 
-                      
-
+                        <div class="LinkButtonContainer">
+                            <div class="LinkButton">
+                                <div class="LinkText"> <a href="https://isart-digital.itch.io/rollerloop">  Itch.io </a></div> 
+                            </div>
+                            <div class="LinkButton">
+                                <div class="LinkText"><a href="https://github.com/BryanBachelet/RollerLoopCode">  Github </a> </div>
+                            </div>
+                        </div>
                     </div>
-
                     
                     <div class="imageContent">
                         <!-- <img src="Images/Seeker of Sand ScreenShot 2.png"> -->
@@ -157,43 +139,6 @@
                         <!-- </video> -->
                     </div> 
                     
-                </div>
-                <div class="detailsProjectContainer">   
-                        <div class="descirption">
-                            <p>On this project, I implemented the main game mechanics, <b>the Rollback</b>. The rollback is a mechanics that allow the player to come back to a previous position while keeping their momentum and direction.
-                        </div> 
-                        <div class="gif">
-                            <img src="Video/RollerLoop/RL_Clip_1.gif">
-                        </div>
-                        <div class="descirption">
-                            <p>Let's explain how the mechanics work and how I have coded it : <br>
-                                1. First, the player will press the button X to create a clone at his position. We will store the player's position and rotation in an array.</p>
-                        </div> 
-                        <div class="gif">
-                            <img src="Video/RollerLoop/RL_Clip_2.gif">
-                        </div>
-                         <div class="descirption">
-                            <p>2. While the clone is active, we will keep storing the position and the rotation of the avatar in the array, every X units traveled.</p>
-                        </div> 
-                        <div class="illustration">
-                            <img src="Images/RollerLoop/Schéma RL 1.png">
-                        </div>
-                        <div class="descirption">
-                            <p>3. Activation rollback, we make the avatar invincible and use the position and rotation stores to make the avatar come back to his clone. When the player comes back to his clone, we set his direction and his speed.</p>
-                        </div> 
-                        <div class="gif">
-                            <img src="Video/RollerLoop/RL_Clip_3.gif">
-                        </div>
-                        
-                        <div class="descirption">
-                            <p>But in order to make the mechanic more interesting, we had to specify some rules about orientation in the rollback. For example, when the direction is under the horizontal of the player, we re-adjust the direction to the horizontal to keep the experience fluid.</p>
-                        </div>
-                        <div class="illustration">
-                            <img src="Images/RollerLoop/Schéma RL 2.png">
-                        </div>
-                        <div class="gif">
-                            <img src="Video/RollerLoop/RL_Clip_4.gif">
-                        </div>
                 </div>
             </div>  
         </section>

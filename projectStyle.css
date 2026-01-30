@@ -25,9 +25,9 @@ body
 
 .TitleSection
 {
-    height: 1000px;
+    height: 900px;
     width: 100%;
-    margin-bottom: 50px; 
+
 }
 
 .content
@@ -40,27 +40,26 @@ body
     width: 100%;
     height: 100%;
     align-items: center;
-    vertical-align: middle; 
-    display: flex;
+    vertical-align: middle;
+    max-width: 2000px;
     margin: auto;
-   
+    display: flex;
 }
 
 .TitleSection .content .projectImage
 {
-    height: 100%;
     display: flex;
     align-items: center;
-     margin-top: 0px;   
+    margin: auto;
+      margin-top: 0px;   
     margin-left: 0px;  
- 
 }
 
 .TitleSection .content  .projectImage img
 {   
-    width: 100%;
-   
-    height: 100%; 
+    width: 1400px;
+    height: 850px;
+    /* height: 100%; */
     z-index: 100;
     margin: auto;
     border: solid 1px  rgb(186, 219, 247);
@@ -72,8 +71,8 @@ body
 {
     margin: auto;    
     margin-top: 0px;   
-    width: 25%;
-    height: 100%;
+    width: 520px;
+    height: 850px;
     z-index: 100;
     background-color:#953e56;
     display: block;
@@ -112,7 +111,7 @@ body
     font-family: text;
     font-size: 23px;
     line-height: 30px;
-    text-align: justify;
+    text-align: left;
     width: 80%;
     padding: 10px;
     margin-top: 35px;
@@ -182,14 +181,13 @@ body
     border-radius: 15px;
     border-color:white;
     transition: all 1s;
-    box-shadow: 15px 15px 3px 2px
 }
 
 
 .Details .content .cards:hover
 {
     transition: all 1s;
-    background-color: rgb(25,25, 25);
+    background-color: rgb(31, 31, 31);
 }
 
 .Details .content .cards .cardContent
@@ -198,27 +196,15 @@ body
     width: 100%;
 }
 
-
-
-.Details .content .cards  .titleCard
-{
-    font-size: 25px;
-    font-family: text;
-    text-align: center;
-    font-weight: bold;
-    margin: auto;
-    color: aliceblue;
-    margin-bottom: 20px;
-}
-
 .Details .content .cards .cardsIcon
 {
     display: flex;
     align-items: center;
     margin: auto;
     width: 60%;
-    aspect-ratio : 1 / 1;
+     aspect-ratio : 1 / 1;
     background-color: white;
+
     border-radius: 50%;
     margin-bottom: 15px;
 
@@ -256,8 +242,7 @@ body
     align-items: center;
     justify-content: center;
     vertical-align: middle;
-    padding-top:75px;
-    padding-bottom: 50px;
+    padding-top:100px;
     background-color: #953e56;
     border-radius: 15px ;
     margin: auto;
@@ -294,8 +279,9 @@ body
     font-family: text;
     text-align: justify;
     line-height: 30px;
-    font-size: 20px;
+    font-size: 25px;
     padding-right: 30px;
+
     color: white;
 }
 
@@ -310,46 +296,6 @@ body
 { 
     width: 100%;
     height: 100%;
-
-    box-shadow: 15px 15px 3px 2px #6c2d3f;
-}
-
-
-.presentationProject .contents .detailsProjectContainer
-{
-    width: 70%;
-    margin: auto;
-    margin-top: 50px;
-    align-items: center;
-    font-family: text;
-    word-spacing: 2px;
-    font-size: 20px;
-    color: white;
-    text-align:start;
-}
-
-.presentationProject .contents .detailsProjectContainer .gif
-{
-    width: 50%;
-    margin: auto;
-    align-items: center;
-
-}
-
-.presentationProject .contents .detailsProjectContainer .illustration
-{
-    width: 70%;
-    margin: auto;
-    align-items: center;
-
-}
-
-.presentationProject .contents .detailsProjectContainer  img
-{
-    width: 100%;        
-    margin: auto;
-    align-items: center;
-
 }
 
 
@@ -387,14 +333,12 @@ body
     display: flex;
     transition: all 1s;
     margin-bottom: 20px;
-     box-shadow: 10px 10px 3px 2px #6c2d3f;
 }
 .LinkButtonContainer .LinkButton:hover
 {
     border: 3px white solid;
     background-color: white;
     transition: all 1s;
-    box-shadow: 15px 15px 3px 2px #6c2d3f;
 }
 
 
@@ -444,6 +388,9 @@ body
 {   
 
 
+
+
+
     .TitleSection
     {
         height: auto;
@@ -482,11 +429,9 @@ body
 
     .Details .content
     {
-        margin-top:50px ;
-        padding-top: 50px;
-        height: fit-content;
+        margin-top: 50px;
+        height: 850px;
         width: 85%;
-        padding-bottom: 50px;
     }
 
     .Details .content .titleContainer
@@ -504,7 +449,7 @@ body
     .Details .content .cards
     {
         width: 70%;
-        height: fit-content;
+        height: 20vw;
         
     }
 
@@ -518,17 +463,15 @@ body
         top: -370px;
     }
 
-
+    .presentationProject .content
+    {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 
     .presentationProject
     {
         height: fit-content;
-    }
-
-    .presentationProject .contents
-    {
-        padding-top: 50px;
-        padding-bottom: 50px;
     }
 
     .presentationProject .contents .overviewContainer
@@ -540,7 +483,6 @@ body
     .presentationProject .contents .overviewContainer .overviewText
     {
         width: 100%;
-        font-size: 25px;
         padding-right: 0px;
        
     }
@@ -553,13 +495,6 @@ body
         height: 500px;
 
         margin-bottom: 40px;
-    }
-
-    .presentationProject .contents .detailsProjectContainer
-    {
-        width: 90%;
-        font-size: 25px;
-        text-align: justify;
     }
     .star-layers
     {
