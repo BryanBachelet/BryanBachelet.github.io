@@ -25,7 +25,8 @@ body
 
 .TitleSection
 {
-    height: 1000px;
+    min-height: min-content;
+    max-height: fit-content;
     width: 100%;
     margin-bottom: 50px; 
 
@@ -39,7 +40,6 @@ body
 .TitleSection .content
 {
     width: 100%;
-    height: 100%;
     align-items: center;
     vertical-align: middle;
     display: flex;
@@ -60,9 +60,9 @@ body
 .TitleSection .content  .projectImage img
 {   
     width: 100%;
-    height: 100%;
     z-index: 100;
     margin: auto;
+    margin-top: 0px;  
     border: solid 1px  rgb(186, 219, 247);
 
    
@@ -73,7 +73,7 @@ body
     margin: auto;    
     margin-top: 0px;   
     width: 25%;
-    height: 100%;
+    height: 800px;
     z-index: 100;
     background-color:#953e56;
     display: block;
