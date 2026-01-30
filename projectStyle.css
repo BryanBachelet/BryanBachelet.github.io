@@ -25,8 +25,9 @@ body
 
 .TitleSection
 {
-    height: 900px;
+    height: 1000px;
     width: 100%;
+    margin-bottom: 50px; 
 
 }
 
@@ -41,25 +42,25 @@ body
     height: 100%;
     align-items: center;
     vertical-align: middle;
-    max-width: 2000px;
-    margin: auto;
     display: flex;
+    margin: auto;
 }
 
 .TitleSection .content .projectImage
 {
+    width: 75%;
+    height: 100%;
     display: flex;
     align-items: center;
     margin: auto;
-      margin-top: 0px;   
+    margin-top: 0px;   
     margin-left: 0px;  
 }
 
 .TitleSection .content  .projectImage img
 {   
-    width: 1400px;
-    height: 850px;
-    /* height: 100%; */
+    width: 100%;
+    height: 100%;
     z-index: 100;
     margin: auto;
     border: solid 1px  rgb(186, 219, 247);
@@ -71,8 +72,8 @@ body
 {
     margin: auto;    
     margin-top: 0px;   
-    width: 520px;
-    height: 850px;
+    width: 25%;
+    height: 100%;
     z-index: 100;
     background-color:#953e56;
     display: block;
@@ -111,7 +112,7 @@ body
     font-family: text;
     font-size: 23px;
     line-height: 30px;
-    text-align: left;
+    text-align: justify;
     width: 80%;
     padding: 10px;
     margin-top: 35px;
@@ -181,6 +182,7 @@ body
     border-radius: 15px;
     border-color:white;
     transition: all 1s;
+    box-shadow: 15px 15px 3px 2px
 }
 
 
@@ -188,12 +190,24 @@ body
 {
     transition: all 1s;
     background-color: rgb(31, 31, 31);
+    box-shadow: 15px 15px 3px 2px
 }
 
 .Details .content .cards .cardContent
 {
     margin: auto;
     width: 100%;
+}
+
+.Details .content .cards  .titleCard
+{
+    font-size: 25px;
+    font-family: text;
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    color: aliceblue;
+    margin-bottom: 20px;
 }
 
 .Details .content .cards .cardsIcon
@@ -242,7 +256,8 @@ body
     align-items: center;
     justify-content: center;
     vertical-align: middle;
-    padding-top:100px;
+    padding-top:75px;
+    padding-bottom: 50px;
     background-color: #953e56;
     border-radius: 15px ;
     margin: auto;
@@ -279,7 +294,7 @@ body
     font-family: text;
     text-align: justify;
     line-height: 30px;
-    font-size: 25px;
+    font-size: 20px;
     padding-right: 30px;
 
     color: white;
@@ -296,6 +311,48 @@ body
 { 
     width: 100%;
     height: 100%;
+
+
+    box-shadow: 15px 15px 3px 2px #6c2d3f;
+}
+
+
+
+
+.presentationProject .contents .detailsProjectContainer
+{
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    align-items: center;
+    font-family: text;
+    word-spacing: 2px;
+    font-size: 20px;
+    color: white;
+    text-align:start;
+}
+
+.presentationProject .contents .detailsProjectContainer .gif
+{
+    width: 50%;
+    margin: auto;
+    align-items: center;
+
+}
+
+.presentationProject .contents .detailsProjectContainer .illustration
+{
+    width: 70%;
+    margin: auto;
+    align-items: center;
+
+}
+
+.presentationProject .contents .detailsProjectContainer  img
+{
+    width: 100%;        
+    margin: auto;
+    align-items: center;
 }
 
 
@@ -333,6 +390,7 @@ body
     display: flex;
     transition: all 1s;
     margin-bottom: 20px;
+    box-shadow: 10px 10px 3px 2px #6c2d3f;
 }
 .LinkButtonContainer .LinkButton:hover
 {

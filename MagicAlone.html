@@ -51,6 +51,9 @@
                 
                     <div class="cards">
                         <div class="cardContent">
+                            <div class="titleCard">
+                               Genre :
+                            </div>
                             <div class="cardsIcon">
                                 <img src="Images/Icon_RPG.png">
                             </div>
@@ -62,6 +65,9 @@
 
                     <div class="cards">
                         <div class="cardContent">
+                            <div class="titleCard">
+                               Duration :
+                            </div>
                             <div class="cardsIcon">
                                 <img src="Images/Icon_Calendar.png">
                             </div>
@@ -73,6 +79,9 @@
 
                     <div class="cards">
                         <div class="cardContent">
+                            <div class="titleCard">
+                               Team Size :
+                            </div>
                             <div class="cardsIcon">
                                 <img src="Images/Icon_Peoples.png">
                             </div>
@@ -84,6 +93,9 @@
 
                     <div class="cards">
                         <div class="cardContent">
+                            <div class="titleCard">
+                               Engine :
+                            </div>
                             <div class="cardsIcon">
                                 <img src="Images/Icon_C++.png">
                             </div>
@@ -96,10 +108,13 @@
                     <div class="cards">
                         <div class="cardContent">
                             <div class="cardsIcon">
+                            <div class="titleCard">
+                               Role :
+                            </div>
                                 <img src="Images/Icon_Travail.png">
                             </div>
                             <div class="text cardsText">
-                               Lead Programmer 
+                               Optimization Programmer 
                             </div>
                         </div>
                     </div>
@@ -116,26 +131,37 @@
                     <div class="overviewText">
                         <div class="descirption">
                             La Ville Rose is a turn-based RPG on PC. The player's goal is to stop the Blue faction from repainting all the town in blue. The player will embody a truck in the exploration phase that can repaint the town in pink. In the combat phase, the player will have a squad soldier and the player has to defeat all the enemy.                             
-                            <p>For this project, we worked on Unreal 4 mainly in C++. My main focus task on this project was the optimization of paint in the exploration phase to allow the player to paint its environment without FPS lost. It was a great experience rendering subjects in a bigger team than before. 
                         </div>
-
-                    <div class="LinkButtonContainer">
-                        <!-- <div class="LinkButton">
-                            <div class="LinkText"> <a href="https://guerhouba-games.itch.io/seekers-of-sands">  Itch.io </a></div> 
-                        </div> -->
-                        <div class="LinkButton">
-                            <div class="LinkText"><a href="https://github.com/BryanBachelet/LaVilleRose">  Github </a> </div>
+                        <div class="LinkButtonContainer">
+                            <div class="LinkButton">
+                                <div class="LinkText"><a href="https://github.com/BryanBachelet/LaVilleRose">  Github </a> </div>
+                            </div>
                         </div>
-                    </div>
-                </div>  
+                    </div>  
                     <div class="imageContent">
-                        <!-- <img src="Images/Seeker of Sand ScreenShot 2.png"> -->
-                        <!-- <video controls>   -->
                             <iframe width="1000" height="1000" src="Video/Trailer_LaVilleRose.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <!-- </video> -->
                     </div> 
                 </div>
-            </div>  
+          <div class="detailsProjectContainer">   
+                <div class="descirption">
+                    <p>La Ville Rose is divided into two gameplay parts. The first one is the turn-phase combat part. The second one is an exploration part where you move with your truck and can repaint the town in pink. This is a really juicy mechanic, but also a mechanic that can cost a lot of performance. Let's see how I optimized it. 
+                </div> 
+                <div class="gif">
+                    <img src="Video/La_Ville_Rose/La_Ville_Rose.gif">
+                </div>
+                <div class="descirption">
+                    <p>To achieve this effect, we used a 3D render texture and combined it with the material of the decor to create the paint effect. To paint on the 3D render texture, we have take advantage of the computer shader in Unreal Engine 4 to set the color of the pixels. The first version we had of this feature was reading all the pixel values and setting the pixel color if needed. This wasn't an optimized method.</p>
+                </div> 
+                <div class="illustration">
+                    <img src="Images/Ville_Rose/Schéme Ville Rose 1.png">
+                </div>
+                <div class="descirption">
+                    <p>To resolve this problem of performance, I started to track the position of the truck and used it to pinpoint its position on a 3D render texture. With that information, I could only read a small area around the player in the computer shader and reduce the amount of computation for the painting.</p>
+                </div> 
+                <div class="illustration">
+                    <img src="Images/Ville_Rose/Schéme Ville Rose 2.png">
+                </div>
+            </div>
         </section>
        
         <div class="Footer">
