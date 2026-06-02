@@ -1,0 +1,187 @@
+@import "../projectStyle.css";
+@import "../styles.css";
+
+body
+{
+    background: linear-gradient(90deg, rgb(77, 38, 95) 0%, rgb(63, 62, 149) 100%);
+    width: 100%;
+    margin: 0px;
+    display: block;
+}
+
+.star-layers {
+    height: 325vh;
+}
+
+
+.ProjectSec
+{
+    padding-top: 100px;
+    width: 100%;
+    height: 1000px;
+    margin: auto;
+}
+
+.ProjectSec .Content
+{
+
+    margin: auto;
+    width: 90%;
+    height: 90%;
+}
+
+
+.buttons{
+  margin-top:100;
+  display:flex;
+  justify-content:center;
+  gap:2rem;
+  z-index: 100;
+}
+.buttons button{
+  border:none;
+  padding:0.4rem 1.2rem;
+  background-color:purple;
+  color:white;
+  border-radius:5px;
+  cursor:pointer;
+  z-index: 100;
+    font-family:text; 
+}
+
+#page-number{
+  border:none;
+  text-align:center;
+  width:3rem;
+  border-radius:5px;
+  z-index: 100;
+  font-family:text;
+}
+#page-number:focus{
+  outline:none;
+  z-index: 100;
+}
+
+.list-container{
+  display:flex;
+  justify-content:center;
+}
+.list-container{
+  height:700px;
+}
+.list-container ul {
+  display:grid;
+  grid-template-columns:repeat(1,1fr);
+  grid-template-rows:repeat(5,1fr);
+  gap:0.1rem;
+  width: 100%;
+}
+.list-container ul li {
+  height:100px;
+  margin:20px 0;
+  list-style:none;
+  padding:0.5rem 1rem;
+  background-color:rgb(20, 20, 20);;
+  color:white;
+  z-index: 200;
+  border-radius:10px;
+  border-color:  white;
+  border-style: solid;
+  transition: all 1s;
+;
+}
+
+
+.list-container ul li:hover
+{
+   background-color:rgb(39, 39, 39);
+   transition: all 1s;
+}
+
+.list-container ul li a
+{
+  text-decoration: none;
+  color:white;
+  display:flex;
+}
+
+.list-container ul li a:link
+{
+  text-decoration: none;
+  color:white;
+   display:flex;
+}
+
+.list-container ul li  a:visited, .list-container ul li  a:link, .list-container ul li  a:active
+{
+   text-decoration: none;
+   color:white;
+  display:flex;
+}
+
+
+.list-container ul  li .imgPart
+{
+  display: flex;
+  width: 100px ;
+  height:  100px;
+  margin-right: 25px;
+  background-color: white;
+  border-radius: 50%;
+  align-content: center;
+  align-items: center;
+  
+}
+
+.list-container ul  li .imgPart img
+{
+  height: 80%;
+  width: 80%;
+  margin: auto;
+}
+
+
+.list-container ul li .textPart
+{
+  width:95%;
+  margin: auto;
+}
+
+.list-container ul li .upperPart
+{
+  display: flex;
+  height: 60px;
+
+  font-family: text;
+  font-style: bold; 
+  font-size: 25px;
+  align-items: center;
+}
+
+
+.list-container ul li .upperPart .titleProject
+{
+  width: 70%;
+  font-family: title;
+  font-size: 40px;
+}
+
+.list-container ul li .upperPart .tags
+{
+  width: 25%;
+  text-align: right;
+}
+
+.list-container ul li .upperPart .language
+{
+  width: 5%;
+  text-align: right;
+}
+
+.list-container ul li .description
+{
+  height: 75%;
+  font-family: text;
+   font-size: 18px;
+}
+
