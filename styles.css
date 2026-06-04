@@ -701,7 +701,7 @@ body .scrollContainer {
   }
   /* // Star Layer   */
   .star-layers {
-    height: 3000px;
+    height: 2800px;
   }
   /* // About me sections */
   .aboutme {
@@ -725,22 +725,33 @@ body .scrollContainer {
     display: flex;
   }
   .WorkContent {
-    padding-top: 100px;
-    height: 700px;
+    padding-top: 30px;
+    height: 600px;
     background: #27101f;
+  }
+
+  .Galerie
+  {
+    height: 70%;
+    padding-top: 50px;
+    
   }
   .Galerie .GalerieContainer {
     margin: auto;
     display: grid;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 25px;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 25px;
     grid-auto-rows: minmax(50px, auto);
     align-items: center;
+
   }
   .Galerie .GalerieContainer .Project {
     display: flex;
     position: relative;
-    width: 150px;
+    width: 70%;
     height: 400px;
     margin-left: auto;
     margin-right: auto;
