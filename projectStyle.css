@@ -459,6 +459,11 @@ body
     {
         display: block;
     }
+
+    .TitleSection .content  .projectImage
+    {
+        width: 100%;
+    }
     
     .TitleSection .content  .projectImage img
     {
