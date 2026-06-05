@@ -303,559 +303,523 @@ $shadows-big: multiple-box-shadow(100); // Big stars
 
 
 /* Galeries */
+.Workspace {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.WorkContent {
+  background: #c56158;
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  height: 850px;
+  width: 90%;
+  border-radius: 15px;
+  padding-bottom: 30px;
+  display: block;
+}
+
+.title {
+  text-align: center;
+  font-size: 50px;
+  font-family: title;
+  color: #f9f871;
+}
 
 
-.Workspace
+.WorkContent .ButtonProject
 {
-    display: flex;
-   
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-}
-
-.WorkContent
-{  
-
-    background: #c56158 ;
-    z-index: 100;
-    align-items: center;
-    justify-content: center;
-    padding-top: 30px;
-    height: 750px;
-    width: 90%;
-  
-    border-radius: 15px;
-    padding-bottom: 30px;
-
-}
-.title 
-{
-
-    text-align: center;
-    font-size: 50px;
-    font-family: title;
-    color: #f9f871;
-
-}
-.Galerie
-{  
-    display: flex;
-    padding-top: 50px;
-    align-items: center;
-
-}
-
-.Galerie .GalerieContainer
-{
-    margin: auto;
-    display: grid;
-    padding-top: 50px;
-    width: 90%;
-    grid-template-columns: repeat(3,1fr);
-
-    grid-gap: 100px;
-    grid-auto-rows: minmax(250px, 500px);
-    align-items: center;
-    transition: all 1s;
-}
-
-.Galerie .Test
-{
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(10px, 500px);
-    align-items: center;
-    transition: all 1s;
-
-}
-.Galerie .GalerieContainer .Project
-{
-     border-radius: 25px;
-    display: flex;
-    position: relative;
-    width: 275px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto  ;
-    background-color: #957777;
-    align-items: center;
-    outline-width: 3px;
-    outline-style: solid;
-    outline-color: #f9f97100;
-    transition: all 1.0s;
-    justify-content: center;
-
+  margin: auto;
+  text-align: center;
+  height: 10%;
   
 }
 
-.Galerie .GalerieContainer .Project:hover
-{   
-    transition: all 1.0s;
-    width: 150px;
-    outline-color: $base-color;
-
-}
-.Galerie .Project a 
+.WorkContent .ButtonProject a,.WorkContent .ButtonProject a:hover,.WorkContent .ButtonProject a:visited,.WorkContent .ButtonProject a:active ,.WorkContent .ButtonProject a:focus,.WorkContent .ButtonProject a:link
 {
-    width: 100%;
-    height: 100%;
+  display: block;
+  margin: auto;
+  text-decoration: none;
+  font-family: title;
+  color:white;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.WorkContent .ButtonProject .TextButton
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-family: text;
+  font-weight: 600;
+  color: white;
+  width: 15%;
+  border-radius: 15px;
+  border: 3px solid white;
+  transition: all 1s;
+  text-decoration: none;
+  height: 70px;
+  font-size: 20px;
+}
+
+.WorkContent .ButtonProject .TextButton:hover
+{
+  width: 15%;
+  background-color: #f09745;
+  transition: all 0.5s;
+  border: 3px solid #f09745;
+  font-size: 25px;
+}
+
+
+.Galerie {
+  display: flex;
+  padding-top: 50px;
+  align-items: center;
+  height:80% ;
+}
+
+.Galerie .GalerieContainer {
+  margin: auto;
+  display: grid;
+  padding-top: 50px;
+  width: 90%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 100px;
+  grid-auto-rows: minmax(250px, 500px);
+  align-items: center;
+  transition: all 1s;
+ 
   
 }
-.Galerie .Project a img
-{
-    border-radius: 25px;
-    width: 100%;
-    height: 100%;
-    filter: blur(2px);
-    transition: all 1.0s;
-    object-fit: cover;
-    
-  
+
+.Galerie .Test {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(10px, 500px);
+  align-items: center;
+  transition: all 1s;
 }
 
-.Galerie .Project a:hover img
-{
-    width: 100%;
-    height: 100%;
-    transition: all 1.0s;
-    filter: none;
-    object-fit: cover;
-    outline-color: $base-color;
-    
+.Galerie .GalerieContainer .Project {
+  border-radius: 25px;
+  display: flex;
+  position: relative;
+  width: 275px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #957777;
+  align-items: center;
+  outline-width: 3px;
+  outline-style: solid;
+  outline-color: rgba(249, 249, 113, 0);
+  transition: all 1s;
+  justify-content: center;
 }
 
-.Galerie .Project .name
-{
-    position: absolute;
-    color: white;
-    width: 100%;
-    text-align: center;
-    font-size: 25px;
-    font-family: text;
-    font-weight: 600;
-    transition: all 1s;
+.Galerie .GalerieContainer .Project:hover {
+  transition: all 1s;
+  width: 150px;
+  outline-color: #f09745;
 }
 
-
-.Galerie .Project:hover .name
-{
-    margin-top: 300px;
-    transition: all 1s;
+.Galerie .Project a {
+  width: 100%;
+  height: 100%;
 }
 
-.Galerie .Project .tag
-{
-    justify-content: center;
-    margin: auto;
-    background-color: #93567b;
-    position: absolute;
-    color: #f9f871;
-    width: 100%;
-    margin-top: 400px;
-    text-align: center;
-    font-size: 16px;
-    font-family: text;
-    transition: all 2s;
-    border-radius: 8px;
+.Galerie .Project a img {
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  filter: blur(2px);
+  transition: all 1s;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.Galerie .Project:hover .tag 
-{
-    transition: all 1s;
-    width: 50%;
+.Galerie .Project a:hover img {
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+  filter: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+  outline-color: #f09745;
 }
 
-
-.aboutme
-{
-    display: flex;
-    align-items: center;
-    height: 800px ;
-    padding-top: 0px;
-    margin: auto;
-    /* background: linear-gradient(90deg, rgba(95,38,74,1) 0%, rgba(150,64,119,1) 35%, rgba(135,9,89,1) 100%); */
+.Galerie .Project .name {
+  position: absolute;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  font-family: text;
+  font-weight: 600;
+  transition: all 1s;
 }
 
-.aboutme .aboutmeBackground
-{ 
-    display: flex;
-    background: #56316b ;
-    z-index: 100;
-    margin: auto;
-    align-items: center;
-    width: 60%;
-    height: 70%;
-    vertical-align:middle;
-    border-radius: 30px;
-    outline:3px dashed #884daa  ;
+.Galerie .Project:hover .name {
+  margin-top: 300px;
+  transition: all 1s;
 }
 
-.aboutme .aboutmeContainer
-{ 
+.Galerie .Project .tag {
+  justify-content: center;
+  margin: auto;
+  background-color: #93567b;
+  position: absolute;
+  color: #f9f871;
+  width: 100%;
+  margin-top: 400px;
+  text-align: center;
+  font-size: 16px;
+  font-family: text;
+  transition: all 2s;
+  border-radius: 8px;
+}
 
-    margin: auto;
+.Galerie .Project:hover .tag {
+  transition: all 1s;
+  width: 50%;
+}
+
+.aboutme {
+  display: flex;
+  align-items: center;
+  height: 800px;
+  padding-top: 0px;
+  margin: auto;
+  /* background: linear-gradient(90deg, rgba(95,38,74,1) 0%, rgba(150,64,119,1) 35%, rgba(135,9,89,1) 100%); */
+}
+
+.aboutme .aboutmeBackground {
+  display: flex;
+  background: #56316b;
+  z-index: 100;
+  margin: auto;
+  align-items: center;
+  width: 60%;
+  height: 70%;
+  vertical-align: middle;
+  border-radius: 30px;
+  outline: 3px dashed #884daa;
+}
+
+.aboutme .aboutmeContainer {
+  margin: auto;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutmeContainer .Content {
+  height: 80%;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  border: 0.3em white;
+  border-style: dotted;
+  border-radius: 17px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 20px;
+}
+
+.aboutmeContainer .title {
+  font-size: 60px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0px;
+  padding-bottom: 50px;
+  padding-left: 0px;
+  color: #f9f871;
+}
+
+.aboutmeContainer .textPresentation {
+  padding-top: 0px;
+  text-align: justify;
+  font-family: text;
+  color: white;
+}
+
+.aboutme a {
+  all: unset;
+  color: white;
+}
+
+.aboutme .AboutButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-family: text;
+  font-weight: 600;
+  color: white;
+  width: 20%;
+  border-radius: 15px;
+  border: 3px solid white;
+  transition: all 1s;
+  text-decoration: none;
+  margin-top: 55px;
+  height: 70px;
+  font-size: 20px;
+}
+
+.aboutme .AboutButton:hover {
+  width: 25%;
+  background-color: #f09745;
+  transition: all 0.5s;
+  border: 3px solid #f09745;
+  font-size: 25px;
+}
+
+.tools {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  width: 50%;
+  height: 300px;
+}
+
+.tools .contentBox {
+  border-radius: 25px;
+  background-color: #27101f;
+  margin: auto;
+  width: 80%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+}
+
+.tools .title {
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.tools .toolsIcon {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 10px;
+  grid-auto-columns: minmax(10px, 300px);
+  align-items: center;
+}
+
+.tools .langue {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+  border: 3px solid white;
+  border-radius: 10px;
+  color: white;
+  font-family: text;
+  text-align: center;
+  min-width: 50px;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  font-size: 25px;
+}
+
+.tools .script .scriptName {
+  color: white;
+  margin-left: 10px;
+  font-family: text;
+}
+
+.Footer {
+  display: flex;
+  height: 400px;
+  width: 100%;
+}
+
+.Footer .FooterBlock {
+  align-items: center;
+  height: 250px;
+  z-index: 100;
+  background-color: #5f477d;
+  width: 40%;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.Footer .Title {
+  padding-top: 50px;
+  font-family: title;
+  text-align: center;
+  font-size: 40px;
+  color: #f9f871;
+}
+
+.Footer a {
+  all: unset;
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  margin-left: 15px;
+  border: 3px solid white;
+  border-radius: 10px;
+  transition: all 1s;
+}
+
+.Footer a:hover {
+  border: none;
+  background-color: #fac05a;
+  transition: all 1s;
+}
+
+.Footer .ImageContact img {
+  padding-left: 15px;
+  width: 45px;
+  height: 45px;
+}
+
+.Footer .Text {
+  /* padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px; */
+  font-family: text;
+  font-size: 20px;
+  font-weight: 600;
+  font-stretch: ultra-expanded;
+  color: white;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 20px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.Footer .Text:hover {
+  color: #f9f871;
+}
+
+.Footer .FooterContainer {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100px;
+}
+
+.Footer .reseau {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  font-family: text;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Footer .reseau img {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 1000px) {
+  .Footer .FooterBlock {
     width: 80%;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.aboutmeContainer .Content
-{
-    height: 80%;
-    width: fit-content;
-    margin: auto;
-    border: .30em  white;
-    border-style:  dotted  ;
-    border-radius: 17px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top:30px ;
-    padding-bottom: 30px;
-    font-size: 20px;
-}
-
-.aboutmeContainer .title
-{
+  }
+  .Footer .Title {
     font-size: 60px;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 0px;
-    padding-bottom: 50px;
-    padding-left: 0px;
-    color:  #f9f871 ;
-}
-
-.aboutmeContainer .textPresentation
-{
-    padding-top: 0px;
-    text-align: justify;
-    font-family: text;
-    color:  white ;
-  
-}
-
-.aboutme  a
-{ 
-    all : unset;
-    color:  white ;
-}
-.aboutme .AboutButton
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    font-family: text;
-    font-weight: 600;
-    color:  white ;
-    width: 20%;
-    
-    border-radius: 15px;
-    border: 3px solid white;
-    // background-color:#692b3d ;
-    transition: all 1s;
-    text-decoration: none;
-    margin-top: 55px;
-    height: 70px;
-    font-size: 20px;
-}
-
-.aboutme .AboutButton:hover
-{
-    width: 25%;
-    background-color : $base-color ;
-    transition: all 0.5s;
-    border: 3px solid $base-color;
-    font-size: 25px;
-}
-
-
-.tools 
-{
-    display: flex;
-    margin: auto;
-      align-items: center;
-    padding-top: 50px;
-    padding-right: 50px;
-    padding-left: 50px;
-    width: 50%;
-    height: 300px;
-}
-
-.tools .contentBox
-
-{
-    border-radius:25px;
-    background-color: #27101f;
-    margin: auto;
-    width: 80%  ;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 25px;
-}
-
-
-
-
-
-.tools .title
-{
-    color: white    ;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-}
-
-.tools .toolsIcon
-{
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-gap: 10px;
-    grid-auto-columns: minmax(10px, 300px); 
-    align-items: center;
-
-}
-
-
-
-.tools .langue
-
-{       padding-left: 15px;
-    padding-right: 15px;
-    margin: auto;
-     border: 3px solid white;
-    border-radius: 10px;
-    color: white;
-    font-family: text;
-    text-align: center;
-    min-width: 50px;
-    max-width: max-content;
-    font-size: 25px;
-   
-}
-.tools .script .scriptName
-{
-    color: white    ;
-    margin-left: 10px;
-    font-family: text;
-}
-
-.Footer
-{
-    display: flex;
-    height: 400px;
-    width: 100%;
-    
-}
-.Footer .FooterBlock
-{   
-    align-items: center;
-    height: 250px;
-    z-index: 100;
-     background-color:  #5f477d;
-     width: 40%;
-     margin: auto;
-     border-radius: 20px;
-}
-
-
-.Footer .Title
-{  
-    padding-top: 50px;
-    font-family: title;
-    text-align:  center;
-    font-size: 40px;
-    color: #f9f871;
-}
-.Footer a
-{
-    all: unset;
-    display: flex;
-    vertical-align: middle;
-    align-items: center;
-    margin-left: 15px;
-
-    border: 3px solid white;
-    border-radius: 10px;
-    transition: all 1s;
-}
-
-.Footer a:hover
-{
-    border: none;
-    background-color: #fac05a;
-    transition: all 1s;
-}   
-
-.Footer .ImageContact img
-{
-    padding-left: 15px;
-    width:  45px;
-    height:  45px;
-}
-.Footer .Text
-{
-    /* padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px; */
-    font-family: text;
-    font-size: 20px;
-    font-weight: 600;
-    font-stretch:ultra-expanded;
-    color: white;
-    text-align:  center;
-    width: fit-content;
-    margin: 20px;
-    height: fit-content;
-}
-
-.Footer .Text:hover
-{    color: #f9f871;
-}
-
-.Footer .FooterContainer
-{
-    display: flex;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    width: 30%;
-    height: 100px;
-}
-.Footer .reseau
-{
-  
-    display: flex;
-    align-items: center;
-    vertical-align: middle;
-    font-family: text;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.Footer .reseau img
-{
-    width: 50px;
-    height:  50px;
-}
-
-
-@media (max-width: 1000px) 
-{   
-    .Footer .FooterBlock
-{
-    width: 80% ;
-    
-}
-
-.Footer .Title
-{
-    font-size: 60px;
-}
-
-.Footer .Text
-{
+  }
+  .Footer .Text {
     font-size: 30px;
-}
-
-/* // Nav bar */
-.navbar .ButtonContainer
-{
+  }
+  /* // Nav bar */
+  .navbar .ButtonContainer {
     width: 650px;
     height: 70px;
-}
-
-.navbar .ButtonContainer .Button
-{
+  }
+  .navbar .ButtonContainer .Button {
     text-align: center;
-    vertical-align:middle;
+    vertical-align: middle;
     width: 120px;
     height: 30px;
     font-size: 24px;
-}
-
-/* // Project sections  */
-
-.WorkContent
-{
+  }
+  /* // Project sections  */
+  .WorkContent {
     width: 90%;
-}
-
-
-
-/* // Star Layer   */
-.star-layers
-{
-    height: 3000px;
-}
-
-/* // About me sections */
-.aboutme
-{
+  }
+  /* // Star Layer   */
+  .star-layers {
+    height: 2800px;
+  }
+  /* // About me sections */
+  .aboutme {
     height: 900px;
-}
-
-.aboutme .aboutmeBackground
-{
-    width: 90%  ;
+  }
+  .aboutme .aboutmeBackground {
+    width: 90%;
     height: 80%;
-}
-
-.aboutme .textPresentation
-{
-    font-size:  25px;
-}
-
-.aboutme .AboutButton
-{
+  }
+  .aboutme .textPresentation {
+    font-size: 25px;
+  }
+  .aboutme .AboutButton {
     margin-top: 30px;
     width: 30%;
     font-size: 30px;
-}
-    .presentation
-{
-
+  }
+  .presentation {
     width: 100%;
     height: 600px;
-    display:  flex;
-}   
-
-    .WorkContent
-{   padding-top: 100px;
-    height:700px;
+    display: flex;
+  }
+  .WorkContent {
+    padding-top: 30px;
+    height: 600px;
     background: #27101f;
-}
+  }
 
-    .Galerie .GalerieContainer
-{
+  .Galerie
+  {
+    height: 70%;
+    padding-top: 50px;
+    
+  }
+  .Galerie .GalerieContainer {
     margin: auto;
     display: grid;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 25px;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 25px;
     grid-auto-rows: minmax(50px, auto);
     align-items: center;
-}
 
-.Galerie .GalerieContainer .Project
-{
+  }
+  .Galerie .GalerieContainer .Project {
     display: flex;
     position: relative;
-    width: 150px;
+    width: 70%;
     height: 400px;
     margin-left: auto;
-    margin-right: auto  ;
+    margin-right: auto;
     background-color: #957777;
     align-items: center;
-    
-}
-
-    .Galerie .Project .tag
-{
+  }
+  .Galerie .Project .tag {
     margin-left: 10px;
     margin-right: 20px;
     background-color: #5F264A;
@@ -866,35 +830,20 @@ $shadows-big: multiple-box-shadow(100); // Big stars
     text-align: center;
     font-size: 15px;
     font-family: text;
-}
-
-
-.Galerie  .Project:hover
-{
-    transition:  all 1.0s;
+  }
+  .Galerie .Project:hover {
+    transition: all 1s;
     width: 250px;
     outline-color: #f9f871;
-}
-
-
-.Galerie .Project a:hover img
-{
+  }
+  .Galerie .Project a:hover img {
     width: 100%;
     height: 100%;
-    transition: all 1.0s;
+    transition: all 1s;
     filter: none;
-}
-
-.Galerie .Test
-{
-    
-
-}
-
-.Galerie .Project:hover .name
-{
+  }
+  .Galerie .Project:hover .name {
     margin-top: 0px;
-    transition:  all 0s;   
-}
-
-}
+    transition: all 0s;
+  }
+}/*# sourceMappingURL=styles.css.map */
