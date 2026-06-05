@@ -6,7 +6,7 @@
         "language" : "C++",
         "link": "../Page_1.html", 
         "imgLink":  "../Images/AFFICHE_ROLLERLOOP_ECRAN.png",
-        "description" : "Roller Loop is a racing game created on PC / PS5 with Unreal 5. You embody Ayla who hacking through system with her roller. She have a special ability, the Rollback"
+        "description" : "Roller Loop is a racing game created on PC / PS5 with Unreal 5. You embody Ayla who hacking through system with her roller. She have a special ability, the Rollback."
            
       },
        {
@@ -15,7 +15,7 @@
         "language" : "C#",
         "link": "../SeekerOfSand.html",
         "imgLink": "../Images/Seeker of Sand Poster.png",
-        "description" : "Seeker of Sand is a rogue like game create on Unity. You embody a Seeker and fight against the sand corruption"
+        "description" : "Seeker of Sand is a rogue like game create on Unity. You embody a Seeker and fight against the sand corruption."
 
       },
        {
@@ -24,7 +24,15 @@
         "language" : "C++",
         "link": "../LichEngine.html",
         "imgLink":  "../LichEngineImg.png",
-        "description" : "Lich Engine is a custom engine projet developp in C++ with a team of 4 person"
+        "description" : "Lich Engine is a custom engine projet developp in C++ with a team of 4 peoples."
+      },
+       {
+        "title": "La Ville Rose",
+        "tags": "RPG / UE4 ",
+        "language" : "C++",
+        "link": "../LaVilleRose.html",
+        "imgLink":  "../Images/LaVilleRosePoster.png",
+        "description" : "La Ville Rose is a tactical RPG develop on Unreal Engine 4 with a team of 15 peoples. You have to fight back the enemy who want to repaint all the town in blue."
       }
     ]
 }
