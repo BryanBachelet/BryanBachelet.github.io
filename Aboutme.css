@@ -93,7 +93,7 @@ body
     border-radius: 15px;
     margin: auto;
     width: 350px;
-    height: 500px;
+    height: fit-content
 }
 
 .Presentation .Content .presentationBlock .Text
@@ -446,7 +446,7 @@ body
     .Presentation .Content .presentationBlock  .pictureContainer .picture img
     {
         width: 250px;
-        height: 350px;
+        height: fit-content;
     }
 
     .Presentation .Content .presentationBlock .Text .title
